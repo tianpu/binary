@@ -14,3 +14,14 @@ L334
 + ./configure --prefix=$prefix --disable-openssl >> ../setup.log 2>&1
 ```
 freebsd 12.1 passed
+
+# phpmyadmin
+```diff
+./phpmyadmin/libraries/classes/Header.php 
+- x-content-type-options: nosniff 
+- x-frame-options: sameorigin 
+- x-xss-protection: 1; mode=block 
+
+./phpmyadmin/config.inc.php 
++ custom lines
+```
