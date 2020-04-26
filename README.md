@@ -10,8 +10,8 @@ L5390
 
 ./packages/xunsearch-1.4.14.tar.bz2/src/import.cc  
 L927  
-- 			system(XAPIAN_DIR "/bin/xapian-compact -n " DEFAULT_DB_NAME "_a " DEFAULT_DB_NAME " " DEFAULT_DB_NAME "_c");  
-+ 			system(XAPIAN_DIR "/bin/xapian-compact -b 16K -n " DEFAULT_DB_NAME "_a " DEFAULT_DB_NAME " " DEFAULT_DB_NAME "_c"); 
+- system(XAPIAN_DIR "/bin/xapian-compact -n " DEFAULT_DB_NAME "_a " DEFAULT_DB_NAME " " DEFAULT_DB_NAME "_c");  
++ system(XAPIAN_DIR "/bin/xapian-compact -b 16K -n " DEFAULT_DB_NAME "_a " DEFAULT_DB_NAME " " DEFAULT_DB_NAME "_c"); 
 
 ./packages/xunsearch-1.4.14.tar.bz2/src/xs-optimize.sh.in  
 L32  
