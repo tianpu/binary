@@ -1,22 +1,7 @@
-# xunsearch
+# xunsearch 1.4.15
 ```diff
 - ./packages/libevent-2.0.21-stable.tar.bz2 
-+ ./packages/libevent-2.1.11-stable.tar.bz2 
-
-./packages/xunsearch-1.4.14.tar.bz2/configure  
-L5390  
-- #if _EVENT_NUMERIC_VERSION >= 0x02000000  
-+ #if EVENT__NUMERIC_VERSION >= 0x02000000   
-
-./packages/xunsearch-1.4.14.tar.bz2/src/import.cc  
-L927  
-- system(XAPIAN_DIR "/bin/xapian-compact -n " DEFAULT_DB_NAME "_a " DEFAULT_DB_NAME " " DEFAULT_DB_NAME "_c");  
-+ system(XAPIAN_DIR "/bin/xapian-compact -b 16K -n " DEFAULT_DB_NAME "_a " DEFAULT_DB_NAME " " DEFAULT_DB_NAME "_c"); 
-
-./packages/xunsearch-1.4.14.tar.bz2/src/xs-optimize.sh.in  
-L32  
-- bin/xapian-compact $home/$d $home/${d}_tmp 
-+ bin/xapian-compact -b 16K $home/$d $home/${d}_tmp 
++ ./packages/libevent-2.1.12-stable.tar.bz2 
 
 ./setup.sh
 L334
