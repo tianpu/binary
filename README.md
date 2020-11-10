@@ -8,7 +8,7 @@ L334
 - ./configure --prefix=$prefix >> ../setup.log 2>&1
 + ./configure --prefix=$prefix --disable-openssl >> ../setup.log 2>&1
 ```
-freebsd 12.1 passed
+freebsd 12.2R passed
 
 # phpmyadmin
 ```diff
