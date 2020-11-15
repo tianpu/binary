@@ -6,7 +6,7 @@
 ./packages/xunsearch-1.4.14.tar.bz2/src/global.h  
 L17  
 - #define	DEFAULT_BACKLOG		63			// default backlog for listen()   
-+ #define	DEFAULT_BACKLOG		256			// default backlog for listen()   
++ #define	DEFAULT_BACKLOG		128			// default backlog for listen()   
 
 ./packages/xunsearch-1.4.14.tar.bz2/src/import.cc  
 L927  
