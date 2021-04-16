@@ -1,7 +1,7 @@
 # xunsearch 1.4.15
 ```diff
 - ./packages/libevent-2.0.21-stable.tar.bz2 
-+ ./packages/libevent-2.1.11-stable.tar.bz2 
++ ./packages/libevent-2.1.12-stable.tar.bz2 
 
 ./packages/xunsearch-1.4.15.tar.bz2/src/global.h  
 L17  
@@ -23,7 +23,7 @@ L334
 - ./configure --prefix=$prefix >> ../setup.log 2>&1
 + ./configure --prefix=$prefix --disable-openssl >> ../setup.log 2>&1
 ```
-freebsd 12.2R passed
+freebsd 13.0R passed
 
 # phpmyadmin
 ```diff
